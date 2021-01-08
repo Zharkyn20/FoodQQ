@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="747.0" style="-fx-background-color: #F4F7FB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane layoutX="200.0" prefHeight="68.0" prefWidth="548.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow color="#0000001f" />
+            </effect>
+            <children>
+                <ImageView fitHeight="53.0" fitWidth="43.0" layoutX="491.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" rotate="53.7">
+                    <image>
+                        <Image url="@images/search.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="fq_search" focusTraversable="false" layoutX="327.0" layoutY="20.0" prefHeight="29.0" prefWidth="155.0" promptText="Search for the product" style="-fx-background-color: #fff; -fx-border-color: #fff;">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0" />
+                    </font>
+                </TextField>
+                <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="24.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/list.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="460.0" prefWidth="202.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow color="#00000040" />
+            </effect>
+            <children>
+                <Button fx:id="food_q_btn" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Food Quality">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <ImageView fitHeight="97.0" fitWidth="82.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/mylogo.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#b2b2b2" layoutX="91.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Quality&amp;Quantity" textAlignment="CENTER" wrappingWidth="95.0">
+                    <font>
+                        <Font name="Montserrat Bold" size="11.0" />
+                    </font>
+                </Text>
+                <Text fill="#3c3c3c" layoutX="107.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FoodQQ">
+                    <font>
+                        <Font name="Panton Black Caps" size="17.0" />
+                    </font>
+                </Text>
+                <Separator focusTraversable="false" layoutX="14.0" layoutY="110.0" prefHeight="3.0" prefWidth="175.0" style="-fx-background-color: #ccc; -fx-border-style: solid; -fx-border-color: #333;">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Separator>
+                <Button fx:id="cal_cal_btn" layoutX="14.0" layoutY="169.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Calorie Calculator">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="amn_cal_btn" layoutX="14.0" layoutY="209.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Amount Calculator">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="close_btn" layoutX="14.0" layoutY="410.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #f7746a; -fx-border-color: #f7746a; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Close the program" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Separator focusTraversable="false" layoutX="14.0" layoutY="396.0" prefHeight="3.0" prefWidth="175.0" style="-fx-background-color: #fafafa; -fx-border-style: solid; -fx-border-color: #ccc; -fx-border-width: 0;">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Separator>
+            </children>
+        </AnchorPane>
+        <Text fx:id="main_text" fill="#434343" layoutX="305.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Quality and Quantity">
+            <font>
+                <Font name="Montserrat Bold" size="29.0" />
+            </font>
+        </Text>
+
+        <TextField fx:id="fq_search2" alignment="CENTER" focusTraversable="false" layoutX="355.0" layoutY="127.0" prefHeight="50.0" prefWidth="188.0" promptText="Search for the product" style="-fx-background-color: #fff; -fx-border-color: #fff;" visible="false" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="204.0" AnchorPane.topAnchor="127.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+
+      <Button fx:id="fq_find" layoutX="547.0" layoutY="127.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Find" visible="false">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="fq_result" fill="#3c3c3c" layoutX="438.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" visible="false" wrappingWidth="72.8662109375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="fq_ev_t" fill="#3c3c3c" layoutX="288.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Energy Value:" visible="false" wrappingWidth="109.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="fq_fq_t" fill="#3c3c3c" layoutX="540.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Quality:" visible="false" wrappingWidth="109.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="fq_ev_v" fill="#3c3c3c" layoutX="288.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Energy Value" textAlignment="CENTER" visible="false" wrappingWidth="109.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="fq_fq_v" fill="#3c3c3c" layoutX="540.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Quality" textAlignment="CENTER" visible="false" wrappingWidth="109.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fq_search21" alignment="CENTER" focusTraversable="false" layoutX="361.0" layoutY="127.0" onAction="#initialize" prefHeight="50.0" prefWidth="188.0" promptText="Search for the product" style="-fx-background-color: #fff; -fx-border-color: #fff;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cal_cal_ec" alignment="CENTER" focusTraversable="false" layoutX="226.0" layoutY="214.0" prefHeight="50.0" prefWidth="188.0" promptText="Enter the value of calories" style="-fx-background-color: #fff; -fx-border-color: #fff;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cal_cal_em" alignment="CENTER" focusTraversable="false" layoutX="427.0" layoutY="214.0" prefHeight="50.0" prefWidth="188.0" promptText="Enter the value of mass" style="-fx-background-color: #fff; -fx-border-color: #fff;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fx:id="fq_result1" fill="#3c3c3c" layoutX="448.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" visible="false" wrappingWidth="72.8662109375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cal_cal_mt" fill="#3c3c3c" layoutX="376.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calorie Calculator" visible="false" wrappingWidth="196.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cal_cal_res_t" fill="#3c3c3c" layoutX="414.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" textAlignment="CENTER" visible="false" wrappingWidth="82.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cal_cal_res_v" fill="#3c3c3c" layoutX="414.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" textAlignment="CENTER" visible="false" wrappingWidth="82.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="am_cal_mt" fill="#3c3c3c" layoutX="377.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Calculator" visible="false" wrappingWidth="202.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="am_cal_search" alignment="CENTER" focusTraversable="false" layoutX="260.0" layoutY="192.0" prefHeight="50.0" prefWidth="188.0" promptText="Enter the product name" style="-fx-background-color: #fff; -fx-border-color: #fff;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="am_cal_find" layoutX="449.0" layoutY="193.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Find" visible="false">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="am_cal_res_t" fill="#3c3c3c" layoutX="408.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" textAlignment="CENTER" visible="false" wrappingWidth="82.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="am_cal_v" fill="#3c3c3c" layoutX="317.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" textAlignment="CENTER" visible="false" wrappingWidth="277.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="cal_cal_calc" layoutX="627.0" layoutY="214.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #fafafa; -fx-border-color: #ccc; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Calculate" visible="false">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
